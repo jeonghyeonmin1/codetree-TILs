@@ -22,12 +22,12 @@ public class Main {
 	            String[] str2 = sc.nextLine().split(" ");
 	            if(str2[0].equals("L")){
 	                // if(it.hasPrevious()){
-	                    it.previous();
+	                it.previous();
 	                // }
 	            }
 	            else if(str2[0].equals("R")){
 					// if(it.hasNext()){
-						it.next();
+					it.next();
 					// }
 	            }
 	            else if(str2[0].equals("D")){
