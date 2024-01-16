@@ -26,12 +26,15 @@ public class Main {
 	                }
 	            }
 	            else if(str2[0].equals("R")){
-	                if(it.hasNext()){
-	                    it.next();
-	                }
+					if(it.hasNext()){
+						it.next();
+					}
 	            }
 	            else if(str2[0].equals("D")){
-	                it.remove();
+
+					it.remove();
+		
+	                
 	                
 	            }
 	            else if(str2[0].equals("P")){
