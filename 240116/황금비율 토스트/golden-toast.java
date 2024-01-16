@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class Main {
-  	 public static void main(String[] args){
+ 	 public static void main(String[] args){
 	        Scanner sc = new Scanner(System.in);
 	        int n = sc.nextInt();
 	        int m = sc.nextInt();
@@ -31,14 +31,15 @@ public class Main {
 					// }
 	            }
 	            else if(str2[0].equals("D")){
-						it.remove();
+					it.next();
+					it.remove();
 	            }
 	            else if(str2[0].equals("P")){
 	            	char ch = str2[1].charAt(0);
 	                it.add(ch);
-	        		it.next();
+	        
 	            }
-	           }
+	        }
 	          
 	        
 	        
