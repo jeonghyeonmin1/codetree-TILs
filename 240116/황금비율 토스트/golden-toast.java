@@ -31,10 +31,9 @@ public class Main {
 					// }
 	            }
 	            else if(str2[0].equals("D")){
-					// if(it.hasNext()){
-						// it.previous();
+					if(it.hasPrevious()){
 						it.remove();
-					// }
+					}
 	            }
 	            else if(str2[0].equals("P")){
 	            	char ch = str2[1].charAt(0);
