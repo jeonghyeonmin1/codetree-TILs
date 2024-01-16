@@ -31,7 +31,7 @@ public class Main {
 					}
 	            }
 	            else if(str2[0].equals("D")){
-					if(it.hasPrevious()){
+					if(it.hasNext()){
 						it.remove();
 					}
 	            }
