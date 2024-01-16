@@ -31,8 +31,11 @@ public class Main {
 					// }
 	            }
 	            else if(str2[0].equals("D")){
-					it.next();
-					it.remove();
+					if(it.hasnext()){
+						it.next();
+						it.remove();
+					}
+					
 	            }
 	            else if(str2[0].equals("P")){
 	            	char ch = str2[1].charAt(0);
