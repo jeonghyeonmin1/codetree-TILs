@@ -21,19 +21,20 @@ public class Main {
 	        for(int i=0; i<=m; i++){
 	            String[] str2 = sc.nextLine().split(" ");
 	            if(str2[0].equals("L")){
-	                if(it.hasPrevious()){
+	                // if(it.hasPrevious()){
 	                    it.previous();
-	                }
+	                // }
 	            }
 	            else if(str2[0].equals("R")){
-					if(it.hasNext()){
+					// if(it.hasNext()){
 						it.next();
-					}
+					// }
 	            }
 	            else if(str2[0].equals("D")){
-					if(it.hasNext()){
+					// if(it.hasNext()){
+						// it.previous();
 						it.remove();
-					}
+					// }
 	            }
 	            else if(str2[0].equals("P")){
 	            	char ch = str2[1].charAt(0);
