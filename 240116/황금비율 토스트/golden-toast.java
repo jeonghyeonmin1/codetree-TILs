@@ -18,27 +18,27 @@ public class Main {
 	        ListIterator<Character> it = I.listIterator(I.size());
 	        
 	       	        
-	        for(int i=0; i<=m; i++){
-	            String[] str2 = sc.nextLine().split(" ");
-	            if(str2[0].equals("L")){
+	        for(int i=0; i<m; i++){
+	            String str2 = sc.next();
+	            if(str2.equals("L")){
 	                 if(it.hasPrevious()){
 	                it.previous();
 	                 }
 	            }
-	            else if(str2[0].equals("R")){
+	            else if(str2.equals("R")){
 					 if(it.hasNext()){
 					it.next();
 					 }
 	            }
-	            else if(str2[0].equals("D")){
+	            else if(str2.equals("D")){
 					if(it.hasNext()){
 						it.next();
 						it.remove();
 					}
 					
 	            }
-	            else if(str2[0].equals("P")){
-	            	char ch = str2[1].charAt(0);
+	            else if(str2.equals("P")){
+					char ch = sc.next().charAt(0);
 	                it.add(ch);
 	        
 	            }
