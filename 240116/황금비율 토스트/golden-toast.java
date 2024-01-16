@@ -31,11 +31,9 @@ public class Main {
 					}
 	            }
 	            else if(str2[0].equals("D")){
-
-					it.remove();
-		
-	                
-	                
+					if(it.hasPrevious()){
+						it.remove();
+					}
 	            }
 	            else if(str2[0].equals("P")){
 	            	char ch = str2[1].charAt(0);
@@ -47,6 +45,7 @@ public class Main {
 	        
 	        
 	        it = I.listIterator();
+			
 	        while(it.hasNext()){
 	            System.out.print(it.next());
 	        }
