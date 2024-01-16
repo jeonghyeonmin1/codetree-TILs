@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class Main {
- 	 public static void main(String[] args){
+	 public static void main(String[] args){
 	        Scanner sc = new Scanner(System.in);
 	        int n = sc.nextInt();
 	        int m = sc.nextInt();
@@ -31,7 +31,7 @@ public class Main {
 					// }
 	            }
 	            else if(str2[0].equals("D")){
-					if(it.hasPrevious()){
+					if(it.hasNext()){
 						it.next();
 						it.remove();
 					}
