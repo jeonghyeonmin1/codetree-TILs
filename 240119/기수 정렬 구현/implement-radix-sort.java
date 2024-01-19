@@ -30,8 +30,17 @@ public class Main {
 		
 		int factor = 1;
 		
+		int max = 0;
+		for(int i=1; i<arr.length; i++) {
+			if(arr[max]<arr[i]) {
+				max = i;
+			}
+		}
+		
+		String str = Integer.toString(arr[max]);
+
 		//정렬할 자릿수의 크기 만큼 반복한다.
-		for (int d = 0; d < 2; ++d) {
+		for (int d = 0; d < str.length(); ++d) {
 			for (int i = 0; i < n; ++i) {
 				bucket[(arr[i] / factor) % 10].add(arr[i]);
 			}
