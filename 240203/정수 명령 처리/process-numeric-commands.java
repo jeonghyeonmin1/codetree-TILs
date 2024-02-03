@@ -30,7 +30,7 @@ public class Main {
                     System.out.println(0);
                 }
             }
-            else if(str.equals("empty")){
+            else if(str.equals("top")){
                 System.out.println(stack.peek());
             }
         }
