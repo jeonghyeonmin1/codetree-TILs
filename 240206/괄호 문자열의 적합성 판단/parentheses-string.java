@@ -9,23 +9,28 @@ public class Main {
 
         String str = sc.next();
 
-        for(int i=0; i<str.length(); i++){
-            if(str.charAt(i)=='('){
-                stack.push("(");
-            }
-            else if(str.charAt(i) == ')'){
-                if(!stack.peek().equals("(")){
-                    break;
+        if(str.charAt(0) == ')') {
+        	System.out.print("No");
+        }else {
+        	for(int i=0; i<str.length(); i++){
+                if(str.charAt(i)=='('){
+                    stack.push("(");
                 }
-                stack.pop();
+                else if(str.charAt(i) == ')'){
+                    if(!stack.peek().equals("(")){
+                        break;
+                    }
+                    stack.pop();
+                }
+            }
+
+            if(stack.isEmpty()){
+                System.out.print("Yes");
+            }else{
+                System.out.print("No");
             }
         }
-
-        if(stack.isEmpty()){
-            System.out.print("Yes");
-        }else{
-            System.out.print("No");
-        }
+        
 
 
     }
